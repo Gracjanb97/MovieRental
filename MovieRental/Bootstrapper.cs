@@ -1,4 +1,6 @@
 ﻿using Caliburn.Micro;
+using MovieRental.Services;
+using MovieRental.User;
 using MovieRental.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -24,7 +26,10 @@ namespace MovieRental
 
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IAuthenticationService, AuthenticationService>()
+                .Singleton<IRegisterService, RegisterService>()
+                .Singleton<ILoggedInUser, LoggedInUser>();
 
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)
