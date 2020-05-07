@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseAccess.Entities
 {
-    public class User
+    public class UserProfile
     {
         public int Id { get; set; }
 

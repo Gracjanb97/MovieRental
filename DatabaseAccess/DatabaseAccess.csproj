@@ -58,7 +58,7 @@
     <Compile Include="EntitiesConfiguration\VideoConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\VideoRentalConfiguration.cs" />
     <Compile Include="Entities\Account.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserProfile.cs" />
     <Compile Include="Entities\Video.cs" />
     <Compile Include="Entities\VideoRental.cs" />
     <Compile Include="Migrations\202005071223501_InitialModel.cs" />
@@ -76,6 +76,10 @@
     <Compile Include="Migrations\202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.cs" />
     <Compile Include="Migrations\202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.designer.cs">
       <DependentUpon>202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005071453010_ChangedUserEntityName.cs" />
+    <Compile Include="Migrations\202005071453010_ChangedUserEntityName.designer.cs">
+      <DependentUpon>202005071453010_ChangedUserEntityName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\MovieRentalModel.cs" />
@@ -100,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.resx">
       <DependentUpon>202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005071453010_ChangedUserEntityName.resx">
+      <DependentUpon>202005071453010_ChangedUserEntityName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

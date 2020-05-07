@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseAccess.EntitiesConfiguration
 {
-    public class UserConfiguration : EntityTypeConfiguration<User>
+    public class UserConfiguration : EntityTypeConfiguration<UserProfile>
     {
         public UserConfiguration()
         {

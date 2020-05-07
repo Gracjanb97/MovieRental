@@ -16,7 +16,7 @@ namespace DatabaseAccess.Entities
 
         public decimal Balance { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual UserProfile User { get; set; }
 
         public ICollection<VideoRental> VideoRentals { get; set; }
     }
