@@ -17,5 +17,13 @@ namespace DatabaseAccess.Entities
         public DateTime DateEnd { get; set; }
 
         public decimal Price { get; set; }
+
+        public int VideoId { get; set; }
+
+        public virtual Video Video { get; set; }
+
+        public int AccountId { get; set; }
+
+        public virtual Account Account { get; set; }
     }
 }

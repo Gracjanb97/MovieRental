@@ -37,6 +37,10 @@ namespace DatabaseAccess.EntitiesConfiguration
 
             HasRequired(c => c.User)
                 .WithRequiredPrincipal(c => c.Account);
+
+            HasMany(c => c.VideoRentals)
+                .WithRequired(c => c.Account)
+                .HasForeignKey(c => c.AccountId);
         }
     }
 }

@@ -45,6 +45,10 @@ namespace DatabaseAccess.EntitiesConfiguration
                 .HasColumnName("PricePerDay")
                 .HasColumnType("smallmoney")
                 .HasPrecision(10, 2);
+
+            HasMany(c => c.VideoRentals)
+                .WithRequired(c => c.Video)
+                .HasForeignKey(c => c.VideoId);
         }
     }
 }

@@ -19,5 +19,7 @@ namespace DatabaseAccess.Entities
         public string Description { get; set; }
 
         public decimal PricePerDay { get; set; }
+
+        public ICollection<VideoRental> VideoRentals { get; set; }
     }
 }

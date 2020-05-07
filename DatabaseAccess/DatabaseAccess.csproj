@@ -69,6 +69,14 @@
     <Compile Include="Migrations\202005071237421_AddedRelationshipBetweenUserAndAccount.designer.cs">
       <DependentUpon>202005071237421_AddedRelationshipBetweenUserAndAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005071303418_AddedRelationshipBetweenVideoAndVideoRental.cs" />
+    <Compile Include="Migrations\202005071303418_AddedRelationshipBetweenVideoAndVideoRental.designer.cs">
+      <DependentUpon>202005071303418_AddedRelationshipBetweenVideoAndVideoRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.cs" />
+    <Compile Include="Migrations\202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.designer.cs">
+      <DependentUpon>202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\MovieRentalModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +94,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005071237421_AddedRelationshipBetweenUserAndAccount.resx">
       <DependentUpon>202005071237421_AddedRelationshipBetweenUserAndAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005071303418_AddedRelationshipBetweenVideoAndVideoRental.resx">
+      <DependentUpon>202005071303418_AddedRelationshipBetweenVideoAndVideoRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.resx">
+      <DependentUpon>202005071307532_AddedRelationshipBetweenVideoRentalAndAccount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
