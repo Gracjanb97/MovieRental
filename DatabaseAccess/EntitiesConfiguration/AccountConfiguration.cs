@@ -34,6 +34,9 @@ namespace DatabaseAccess.EntitiesConfiguration
                 .HasColumnType("smallmoney")
                 .HasColumnOrder(4)
                 .HasPrecision(10, 2);
+
+            HasRequired(c => c.User)
+                .WithRequiredPrincipal(c => c.Account);
         }
     }
 }

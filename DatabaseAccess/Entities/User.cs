@@ -17,5 +17,7 @@ namespace DatabaseAccess.Entities
         public string Password { get; set; }
 
         public bool IsActive { get; set; }
+
+        public virtual Account Account { get; set; }
     }
 }

@@ -15,5 +15,7 @@ namespace DatabaseAccess.Entities
         public string LastName { get; set; }
 
         public decimal Balance { get; set; }
+
+        public virtual User User { get; set; }
     }
 }
