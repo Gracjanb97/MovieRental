@@ -1,6 +1,7 @@
 namespace DatabaseAccess.Model
 {
     using DatabaseAccess.Entities;
+    using DatabaseAccess.EntitiesConfiguration;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -8,7 +9,7 @@ namespace DatabaseAccess.Model
     public class MovieRentalModel : DbContext
     {
         public MovieRentalModel()
-            : base(nameOrConnectionString: "Default")
+            : base(nameOrConnectionString: "MovieRentalModel")
         {
         }
 
@@ -20,5 +21,13 @@ namespace DatabaseAccess.Model
 
         public DbSet<VideoRental> VideoRentals { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new UserConfiguration());
+            modelBuilder.Configurations.Add(new AccountConfiguration());
+            modelBuilder.Configurations.Add(new VideoConfiguration());
+            modelBuilder.Configurations.Add(new VideoRentalConfiguration());
+            base.OnModelCreating(modelBuilder); 
+        }
     }
 }
